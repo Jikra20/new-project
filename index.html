@@ -4,7 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>book store</title>
- 
+       <style>
+      
+        body {
+            font-family: "Cairo", "Tahoma", sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, #007bff, #00bcd4);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        
+        section.suggested-books {
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        section.suggested-books h2 {
+            color: #007bff;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+        }
+
+        
+        .book-card {
+            background-color: white;
+            display: inline-block;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .book-card h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin: 15px 0 5px;
+        }
+
+        .book-card p {
+            color: #555;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+       
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 30px auto;
+            width: 80%;
+        }
+
+        
+        @media (max-width: 600px) {
+            .book-card {
+                width: 90%;
+            }
+
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+
+            header h1 {
+                font-size: 1.6em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,19 +138,25 @@
         <h3> فلا يحزنك الذب يقولون</h3>
         <P>زكي كريزماتي</p>
         <a href="kotobati - كتاب فلا يحزنك الذي يقولون.pdf" class="btn" > قراء</a>
-    </div><hr>
+    </div>
      <div class="book-card">
         <img src="382161636.jpeg" alt="كتاب2">
         <h3>لاتدري لعل الله يحدث بعد ذلك أمرا </h3>
         <p>زينب مطر</p>
         <a href="kotobati - كتاب لا تدري لعل الله يحدث بعد ذلك أمرا.pdf" class="btn"> قراء</a>
-    </div><hr>
+    </div>
      <div class="book-card">
         <img src="86235674.jpg"alt="كتاب3">
         <h3> لا تحزن</h3>
         <p>د.عائض القرني</p>
         <a href="kotobati - كتاب لا تحزن.pdf" class="btn"> قراء</a>
-    </div><hr>
+    </div>
+    <div class="book-card">
+        <img src="479709582.jpg"كتاب3">
+        <h3> لا تحزن</h3>
+        <p>د.عائض القرني</p>
+        <a href="kotobati - كتاب ثق بالله وتوكل عليه.pdf" class="btn"> قراء</a>
+    </div>
     </section>
 </body>
 </html>
